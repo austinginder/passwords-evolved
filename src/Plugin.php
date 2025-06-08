@@ -76,6 +76,7 @@ class Plugin
      */
     public function get_password_generator()
     {
+        $this->load();
         return $this->container['password.generator'];
     }
 
@@ -86,6 +87,7 @@ class Plugin
      */
     public function get_password_hasher()
     {
+        $this->load();
         return $this->container['password.hasher'];
     }
 
